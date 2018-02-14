@@ -4,9 +4,12 @@
         {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono|Slabo+27px" rel="stylesheet">
         <style>
           * {
+            font-family: 'Slabo+27px', sans-serif;
+          }
+          pre {
             font-family: 'PT Mono', monospace;
           }
         </style>
@@ -59,11 +62,5 @@
         </ul></nav><!-- /#menu -->
         {% block content %}
         {% endblock %}
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
 </body>
 </html>
