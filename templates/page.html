@@ -9,7 +9,7 @@
 
 	{% if page.modified %}
 		<p>
-		Last updated: {{ page.locale_modified }}
+		Last updated: {{ page.date | strftime('%Y-%m-%d') }}
 		</p>
 	{% endif %}
 {% endblock %}
